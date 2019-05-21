@@ -49,6 +49,43 @@ python neural_style_transfer.py --content_image_path images/tubingen.jpg --style
 - `--epsilon`: Epsilon of Adam Optimizer. *Default*: `1e-08`
 - `--iteration`: The number of iterations. *Default*: `150`
 
+## Sample results
+### Content Image : Tübingen, Germany
+### Style Image : starry-night, seated-nude, shipwreck, kandinsky, the_scream
+All of results made from default setting and executed on Colab.
+
+<p align="center">
+<img src="images/content/tubingen.jpg" height="192px">
+<img src="images/sample/tubingen_shipwreck.jpg" height="192px">
+<img src="images/sample/tubingen_starry_night.jpg" height="192px">
+
+<img src="images/sample/tubingen_seated_nude.jpg" height="192px">
+<img src="images/sample/tubingen_the_scream.jpg" height="192px">
+<img src="images/sample/tubingen_kandinsky.jpg" height="192px">
+</p>
+
+### Content Image : 
+#### Female Knight ([source](https://www.artstation.com/artwork/4zXxW))
+
+#### blue-moon-lake ([source](https://github.com/titu1994/Neural-Style-Transfer))
+
+### Style Image : wave
+All of results made from default setting and executed on Colab.
+
+</p>
+<p align='center'>
+<img src = 'images/content/blue-moon-lake.jpg' height = '210px'>
+<img src = 'images/style/wave.jpg' height = '210px'>
+<br>
+<img src = 'images/sample/blue_moon_lake_wave.jpg' '365px' width = '710px'>
+<br>
+<img src = 'images/content/female_knight.jpg' height = '210px'>
+<img src = 'images/style/wave.jpg' height = '210px'>
+<br>
+<img src = 'images/sample/female_knight_wave.png' height = '365px' width = '710px'>
+</p>
+
+
 ## Reference
 #### https://github.com/anishathalye/neural-style.
 
