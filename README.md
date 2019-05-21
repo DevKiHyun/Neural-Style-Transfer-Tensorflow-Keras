@@ -37,7 +37,7 @@ python neural_style_transfer.py --content_image_path images/tubingen.jpg --style
 - `--model_type`: Type of pretrained model. *Choices*: 0(VGG16), 1(VGG19) *Default*: `0`
 - `--image_resize`: Resize(int or tuple) images. *Default*: `512`
 - `--rescale_image`: Rescale the final image to original size. *Default*: `False`
-- `--content_blocks`: Layer list for feature vector of Content image. *Default*: `[conv4_2]`
+- `--content_blocks`: Layer list for feature vector of Content image. *Default*: `['block4_conv2']`
 - `--style_blocks`: Layer list for feature vector of Style image. *Default*: `['block1_conv1', 'block2_conv1', 'block3_conv1', 'block4_conv1', 'block5_conv1']`
 - `--loss_ratio`: Weight of content-loss relative to style-loss. Alpha over beta in the paper. *Default*: `1e-3`
 - `--total_variation_weight`: Total Variation weight. *Default*: `0 (If you want to use this, then 8.5e-5)`
