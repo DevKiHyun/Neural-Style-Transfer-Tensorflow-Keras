@@ -55,3 +55,5 @@ python neural_style_transfer.py --content_image_path images/tubingen.jpg --style
 #### https://github.com/titu1994/Neural-Style-Transfer
 
 #### https://github.com/hwalsuklee/tensorflow-style-transfer
+
+#### https://github.com/cysmith/neural-style-tf
