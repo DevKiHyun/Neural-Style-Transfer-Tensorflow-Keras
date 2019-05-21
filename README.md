@@ -25,13 +25,13 @@ I implement a tensorflow&keras model described in the papers
 ```
 python neural_style_transfer.py --content_image_path <content image path> --style_image_path <style image path>
 # ex)
-python neural_style_transfer.py --content_image_path images/tubingen.jpg --style_image_path images/starry-night.jpg
+python neural_style_transfer.py --content_image_path images/content/tubingen.jpg --style_image_path images/style/starry-night.jpg
 ```
 
 #### Arguments
 *Required* :  
-- `--content_image_path`: Path of the content image. *Default*: `images/tubingen.jpg`
-- `--style_image_path`: Path of the style image. *Default*: `images/starry-night.jpg`
+- `--content_image_path`: Path of the content image. *Default*: `images/content/tubingen.jpg`
+- `--style_image_path`: Path of the style image. *Default*: `images/style/starry-night.jpg`
 
 *Optional* :  
 - `--model_type`: Type of pretrained model. *Choices*: 0(VGG16), 1(VGG19) *Default*: `0`
