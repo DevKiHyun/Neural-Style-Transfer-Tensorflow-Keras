@@ -38,8 +38,7 @@ def get_image_data(path, resize=None, dtype=np.float32):
             resize = (int(width * ratio), int(height * ratio))
 
         else:
-            assert type(
-                resize) == tuple, "If 'resize' is not 'int', then should be 'tuple' = (resize_width, resize_height)"
+            assert type(resize) == tuple, "If 'resize' is not 'int', then should be 'tuple' = (resize_width, resize_height)"
 
             resize = (resize[1], resize[0])
 
@@ -69,8 +68,7 @@ def deprocessing(image):
 def Gram_Matrix(input_tensor):
     # input_tensor Shape : (height, width, n_channel)
     # We should reshape to (height * width, n_channel)
-    assert len(
-        input_tensor.shape) == 3, "'input_tensor' shape is wrong. 'input_tensor' should be shape : (height, width, n_channel)"
+    assert len(input_tensor.shape) == 3, "'input_tensor' shape is wrong. 'input_tensor' should be shape : (height, width, n_channel)"
 
     n_channel = input_tensor.shape[-1]
     input_tensor = tf.reshape(input_tensor, shape=(-1, n_channel))
@@ -252,8 +250,7 @@ if __name__ == '__main__':
     loss = loss_ratio * content_loss + style_loss + tv_loss
 
     # Minimize cost
-    trainble_variables = [var for var in tf.global_variables() if
-                          'pretrained_model' not in var.name]  # Should not train the weights of pretrained model.
+    trainble_variables = [var for var in tf.global_variables() if 'pretrained_model' not in var.name]  # Should not train the weights of pretrained model.
     if optimizer_type == 0:
         optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate, beta1=beta_1, beta2=beta_2,
                                            epsilon=epsilon).minimize(loss, var_list=trainble_variables)
